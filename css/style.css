@@ -43,6 +43,9 @@ h6,
     transition: .5s;
 }
 
+nav{
+    display:inline;
+}
 
 
 .btn-primary {
