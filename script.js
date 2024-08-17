@@ -116,13 +116,7 @@ function getFormFields(service) {
                             <label for="idDocuments">Identification Documents</label>
                         </div>
                     </div>
-                    <!-- Proof of Address -->
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="file" class="form-control" id="proofOfAddress" placeholder="Proof of Address" required>
-                            <label for="proofOfAddress">Proof of Address</label>
-                        </div>
-                    </div>
+                  
                     <!-- Business Plan (Optional) -->
                     <div class="col-12">
                         <div class="form-floating">
@@ -324,8 +318,8 @@ function getFormFields(service) {
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="idNumber" placeholder="ID Number" required>
-                            <label for="idNumber">ID Number</label>
+                            <input type="text" class="form-control" id="genre" placeholder="Genre" required>
+                            <label for="idNumber">Genre</label>
                         </div>
                     </div>
                 </div>
@@ -347,28 +341,17 @@ function getFormFields(service) {
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating">
-                            <textarea class="form-control" id="employeeDetails" placeholder="Employee Details" style="height: 150px;" required></textarea>
-                            <label for="employeeDetails">Employee Details</label>
+                            <textarea class="form-control" id="employeeDetails" placeholder="Number Of Employees" style="height: 150px;" required></textarea>
+                            <label for="employeeDetails">Number Of Employees</label>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="paymentSchedule" placeholder="Payment Schedule" required>
-                            <label for="paymentSchedule">Payment Schedule</label>
+                            <input type="text" class="form-control" id="businessaddress" placeholder="Business Address" required>
+                            <label for="paymentSchedule">Business Address</label>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="taxInformation" placeholder="Tax Information" required>
-                            <label for="taxInformation">Tax Information</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="idNumber" placeholder="ID Number" required>
-                            <label for="idNumber">ID Number</label>
-                        </div>
-                    </div>
+                
                 </div>
             `;
         case 'microLending':
@@ -521,12 +504,7 @@ function getFormFields(service) {
                             <label for="investmentPreferences">Investment Preferences</label>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="idNumber" placeholder="ID Number" required>
-                            <label for="idNumber">ID Number</label>
-                        </div>
-                    </div>
+                  
                 </div>
             `;
         case 'creditLending':
