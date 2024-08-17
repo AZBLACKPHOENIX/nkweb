@@ -46,48 +46,84 @@ function getFormFields(service) {
         case 'companyRegistration':
             return `
                 <div class="row g-3">
+                    <!-- Preferred Business Name 1 -->
                     <div class="col-md-6">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="businessName" placeholder="Business Name" required>
-                            <label for="businessName">Business Name</label>
+                            <input type="text" class="form-control" id="preferredBusinessName1" placeholder="Preferred Business Name 1" required>
+                            <label for="preferredBusinessName1">Preferred Business Name 1</label>
                         </div>
                     </div>
+                    <!-- Preferred Business Name 2 -->
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="preferredBusinessName2" placeholder="Preferred Business Name 2" required>
+                            <label for="preferredBusinessName2">Preferred Business Name 2</label>
+                        </div>
+                    </div>
+                    <!-- Business Type -->
                     <div class="col-md-6">
                         <div class="form-floating">
                             <input type="text" class="form-control" id="businessType" placeholder="Business Type" required>
                             <label for="businessType">Business Type</label>
                         </div>
                     </div>
+                    <!-- Business Address -->
                     <div class="col-md-6">
                         <div class="form-floating">
                             <input type="text" class="form-control" id="businessAddress" placeholder="Business Address" required>
                             <label for="businessAddress">Business Address</label>
                         </div>
                     </div>
+                    <!-- Residential Address -->
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="residentialAddress" placeholder="Residential Address" required>
+                            <label for="residentialAddress">Residential Address</label>
+                        </div>
+                    </div>
+                    <!-- Contact Information -->
                     <div class="col-md-6">
                         <div class="form-floating">
                             <input type="text" class="form-control" id="contactInfo" placeholder="Contact Information" required>
                             <label for="contactInfo">Contact Information</label>
                         </div>
                     </div>
+                    <!-- Cell Number -->
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="cellNumber" placeholder="Cell Number" required>
+                            <label for="cellNumber">Cell Number</label>
+                        </div>
+                    </div>
+                    <!-- Email Address -->
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="emailAddress" placeholder="Email Address" required>
+                            <label for="emailAddress">Email Address</label>
+                        </div>
+                    </div>
+                    <!-- ID Number -->
                     <div class="col-md-6">
                         <div class="form-floating">
                             <input type="text" class="form-control" id="idNumber" placeholder="ID Number" required>
                             <label for="idNumber">ID Number</label>
                         </div>
                     </div>
+                    <!-- Identification Documents -->
                     <div class="col-md-6">
                         <div class="form-floating">
                             <input type="file" class="form-control" id="idDocuments" placeholder="Identification Documents" required>
                             <label for="idDocuments">Identification Documents</label>
                         </div>
                     </div>
+                    <!-- Proof of Address -->
                     <div class="col-md-6">
                         <div class="form-floating">
                             <input type="file" class="form-control" id="proofOfAddress" placeholder="Proof of Address" required>
                             <label for="proofOfAddress">Proof of Address</label>
                         </div>
                     </div>
+                    <!-- Business Plan (Optional) -->
                     <div class="col-12">
                         <div class="form-floating">
                             <textarea class="form-control" id="businessPlan" placeholder="Business Plan (optional)" style="height: 150px;"></textarea>
@@ -96,47 +132,75 @@ function getFormFields(service) {
                     </div>
                 </div>
             `;
+        
         case 'tenderServices':
-            return `
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="businessName" placeholder="Business Name" required>
-                            <label for="businessName">Business Name</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="contactInfo" placeholder="Contact Information" required>
-                            <label for="contactInfo">Contact Information</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="file" class="form-control" id="tenderDocument" placeholder="Tender Document (if available)" required>
-                            <label for="tenderDocument">Tender Document</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <textarea class="form-control" id="relevantExperience" placeholder="Relevant Experience" style="height: 150px;" required></textarea>
-                            <label for="relevantExperience">Relevant Experience</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="file" class="form-control" id="financialStatements" placeholder="Financial Statements" required>
-                            <label for="financialStatements">Financial Statements</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="idNumber" placeholder="ID Number" required>
-                            <label for="idNumber">ID Number</label>
-                        </div>
-                    </div>
+    return `
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="businessName" placeholder="Preferred Business Name" required>
+                    <label for="businessName">Business Name</label>
                 </div>
-            `;
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="contactInfo" placeholder="Contact Information" required>
+                    <label for="contactInfo">Contact Information</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="file" class="form-control" id="tenderDocument" placeholder="Tender Document (if available)" required>
+                    <label for="tenderDocument">Tender Document</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <textarea class="form-control" id="relevantExperience" placeholder="Relevant Experience" style="height: 150px;" required></textarea>
+                    <label for="relevantExperience">Relevant Experience</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="file" class="form-control" id="financialStatements" placeholder="Financial Statements" required>
+                    <label for="financialStatements">Financial Statements</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="idNumber" placeholder="ID Number" required>
+                    <label for="idNumber">ID Number</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <label>Select Additional Services:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="bbbee" value="BBB-EE R300">
+                    <label class="form-check-label" for="bbbee">BBB-EE R300</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="csd" value="CSD Registration R600">
+                    <label class="form-check-label" for="csd">CSD Registration R600</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cidb" value="CIDB Registration R800">
+                    <label class="form-check-label" for="cidb">CIDB Registration R800</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="coida" value="COIDA Registration R1800">
+                    <label class="form-check-label" for="coida">COIDA Registration R1800</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="taxClearance" value="Tax Clearance R400">
+                    <label class="form-check-label" for="taxClearance">Tax Clearance R400</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="letterHead" value="Letter Head R300">
+                    <label class="form-check-label" for="letterHead">Letter Head R300</label>
+                </div>
+            </div>
+        </div>
+    `;
         case 'digitalMarketing':
             return `
                 <div class="row g-3">
