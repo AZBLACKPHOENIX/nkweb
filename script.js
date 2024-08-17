@@ -121,7 +121,7 @@ function getFormFields(service) {
                     <div class="col-12">
                         <div class="form-floating">
                             <textarea class="form-control" id="businessPlan" placeholder="Business Plan (optional)" style="height: 150px;"></textarea>
-                            <label for="businessPlan">Business Plan (optional)</label>
+                            <label for="businessPlan">Special Instructions(optional)</label>
                         </div>
                     </div>
                 </div>
@@ -234,12 +234,8 @@ function getFormFields(service) {
                             <label for="budget">Budget</label>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="idNumber" placeholder="ID Number" required>
-                            <label for="idNumber">ID Number</label>
-                        </div>
-                    </div>
+                
+                
                 </div>
             `;
         case 'dramaWriting':
