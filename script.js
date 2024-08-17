@@ -30,7 +30,7 @@ function getServiceTitle(service) {
         case 'dramaWriting': return 'Drama Writing Services';
         case 'songwriting': return 'Songwriting Services';
         case 'payroll': return 'Payroll Services';
-        case 'microLending': return 'Micro Lending';
+        case 'debitrescue': return 'Debt Rescue';
         case 'stockvel': return 'Stockvel and Society Groups';
         case 'retirementPlanning': return 'Retirement Planning';
         case 'wealthManagement': return 'Wealth Management';
@@ -129,6 +129,9 @@ function getFormFields(service) {
         
         case 'tenderServices':
     return `
+    <div class="container text-center my-4">
+    <h5 class=" fw-bold text-primary">CK, COR 13.4, Company Registration Certificate</h5>
+</div>
         <div class="row g-3">
             <div class="col-md-6">
                 <div class="form-floating">
@@ -350,7 +353,7 @@ function getFormFields(service) {
                 
                 </div>
             `;
-        case 'microLending':
+        case 'debitrescue':
             return `
                 <div class="row g-3">
                     <div class="col-md-6">
