@@ -245,6 +245,7 @@ Please fill out the form and upload proof of payment.</p>
         case 'digitalMarketing':
             return `
                 <div class="row g-3">
+                <p>Let us plan and run a marketing campaign for your company, plan, design, run and Optimize Google Ads and social platforms advertising for your company depending on your budget and target audience</p>
                     <div class="col-md-6">
                         <div class="form-floating">
                             <input type="text" class="form-control" id="businessName" placeholder="Business Name" required>
