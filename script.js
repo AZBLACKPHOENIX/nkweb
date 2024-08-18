@@ -414,45 +414,78 @@ Please fill out the form and upload proof of payment.</p>
             `;
         case 'debitrescue':
             return `
-                <div class="row g-3">
-                <p>Are you struggling due to debts, arrears and defaults accounts. Let us help you out of debt and help you to settle and have a clean credit score.</p>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="name" placeholder="Personal or Business Name" required>
-                            <label for="name">Personal or Business Name</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="contactInfo" placeholder="Contact Information" required>
-                            <label for="contactInfo">Contact Information</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="number" class="form-control" id="loanAmount" placeholder="Loan Amount" required>
-                            <label for="loanAmount">Loan Amount</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <textarea class="form-control" id="loanPurpose" placeholder="Purpose of Loan" style="height: 150px;" required></textarea>
-                            <label for="loanPurpose">Purpose of Loan</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <textarea class="form-control" id="repaymentPlan" placeholder="Repayment Plan" style="height: 150px;" required></textarea>
-                            <label for="repaymentPlan">Repayment Plan</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="idNumber" placeholder="ID Number" required>
-                            <label for="idNumber">ID Number</label>
-                        </div>
-                    </div>
-                </div>
+              <div class="row g-3">
+    <p>Are you struggling due to debts, arrears, and default accounts? Let us help you out of debt and help you settle and achieve a clean credit score.</p>
+    
+    <!-- Full Names -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="fullNames" placeholder="Full Names" required>
+            <label for="fullNames">Full Names</label>
+        </div>
+    </div>
+
+    <!-- Surname -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="surname" placeholder="Surname" required>
+            <label for="surname">Surname</label>
+        </div>
+    </div>
+
+    <!-- ID Number -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="idNumber" placeholder="ID Number" required>
+            <label for="idNumber">ID Number</label>
+        </div>
+    </div>
+
+    <!-- Contact Number -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number" required>
+            <label for="contactNumber">Contact Number</label>
+        </div>
+    </div>
+
+    <!-- Email Address -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="email" class="form-control" id="emailAddress" placeholder="Email Address" required>
+            <label for="emailAddress">Email Address</label>
+        </div>
+    </div>
+
+    <!-- Total Accounts Balance -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="number" class="form-control" id="totalAccountsBalance" placeholder="Total Accounts Balance" required>
+            <label for="totalAccountsBalance">Total Accounts Balance</label>
+        </div>
+    </div>
+
+    <!-- Consent to Credit Assessment -->
+    <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="creditConsent" required>
+            <label class="form-check-label" for="creditConsent">
+                I give consent to Aid Finance to do a credit assessment and credit report on my ID number.
+            </label>
+        </div>
+    </div>
+
+    <!-- Accept Terms and Conditions -->
+    <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="acceptTerms" required>
+            <label class="form-check-label" for="acceptTerms">
+                I accept the terms and conditions.
+            </label>
+        </div>
+    </div>
+</div>
+
             `;
         case 'stockvelSocietyGroups':
             return `
