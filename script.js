@@ -170,7 +170,7 @@ Please fill out the form and upload proof of payment.</p>
                       <div class="col-md-6">
                 <div class="form-floating">
                     <input type="file" class="form-control" id="tenderDocument" placeholder="Tender Document (if available)" required>
-                    <label for="tenderDocument">Tender Document</label>
+                    <label for="tenderDocument">CK/COR 13.4</label><br>
                 </div>
             </div>
 
@@ -190,16 +190,26 @@ Please fill out the form and upload proof of payment.</p>
 
             <div class="col-md-6">
                 <div class="form-floating">
-                    <input type="file" class="form-control" id="financialStatements" placeholder="Financial Statements" required>
-                    <label for="financialStatements">Financial Statements</label>
+                    <input type="file" class="form-control" id="financialStatements" placeholder="Supporting Docs" required>
+                    <label for="sdocs">Supporting Documents(optional)</label>
                 </div>
             </div>
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="fullnames" placeholder="Full Names" required>
+                    <label for="idNumber">Director Full Names</label>
+                </div>
+            </div>
+
             <div class="col-md-6">
                 <div class="form-floating">
                     <input type="text" class="form-control" id="idNumber" placeholder="ID Number" required>
                     <label for="idNumber">ID Number</label>
                 </div>
             </div>
+
+
             <div class="col-12">
                 <label>Select Additional Services:</label>
                 <div class="form-check">
