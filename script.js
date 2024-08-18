@@ -180,6 +180,14 @@ Please fill out the form and upload proof of payment.</p>
                     <label for="relevantExperience">Special Instructions</label>
                 </div>
             </div>
+
+            <!-- Company Income Tax -->
+<div class="mb-4">
+    <label for="companyIncomeTax" class="form-label">Company Income Tax</label>
+    <input type="text" class="form-control" id="companyIncomeTax" name="companyIncomeTax" placeholder="Enter your Company Income Tax number" required>
+
+</div>
+
             <div class="col-md-6">
                 <div class="form-floating">
                     <input type="file" class="form-control" id="financialStatements" placeholder="Financial Statements" required>
