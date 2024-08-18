@@ -490,44 +490,62 @@ Please fill out the form and upload proof of payment.</p>
         case 'stockvelSocietyGroups':
             return `
             <p>Register your Stokvel / society group to become a private investor in Aid Finance and get returns for your investment.</p>
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="groupName" placeholder="Group Name" required>
-                            <label for="groupName">Group Name</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="contactInfo" placeholder="Contact Information" required>
-                            <label for="contactInfo">Contact Information</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <textarea class="form-control" id="groupObjectives" placeholder="Group Objectives" style="height: 150px;" required></textarea>
-                            <label for="groupObjectives">Group Objectives</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <textarea class="form-control" id="membershipDetails" placeholder="Membership Details" style="height: 150px;" required></textarea>
-                            <label for="membershipDetails">Membership Details</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <textarea class="form-control" id="financialStatus" placeholder="Financial Status" style="height: 150px;" required></textarea>
-                            <label for="financialStatus">Financial Status</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="idNumber" placeholder="ID Number" required>
-                            <label for="idNumber">ID Number</label>
-                        </div>
-                    </div>
-                </div>
+               <div class="row g-3">
+    <!-- Stokvel / Society Name -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="societyName" placeholder="Stokvel / Society Name" required>
+            <label for="societyName">Stokvel / Society Name</label>
+        </div>
+    </div>
+
+    <!-- Contact Number -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number" required>
+            <label for="contactNumber">Contact Number</label>
+        </div>
+    </div>
+
+    <!-- Email Address -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="email" class="form-control" id="emailAddress" placeholder="Email Address" required>
+            <label for="emailAddress">Email Address</label>
+        </div>
+    </div>
+
+    <!-- Number of Members -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="number" class="form-control" id="numberOfMembers" placeholder="Number of Members" required>
+            <label for="numberOfMembers">Number of Members</label>
+        </div>
+    </div>
+
+    <!-- Type of Group -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <select class="form-control" id="groupType" required>
+                <option value="">Select Group Type</option>
+                <option value="Burial Society">Burial Society</option>
+                <option value="December Fund">December Fund</option>
+                <option value="Savings Group">Savings Group</option>
+                <option value="Investment Club">Investment Club</option>
+            </select>
+            <label for="groupType">Type of Group</label>
+        </div>
+    </div>
+
+    <!-- Stokvel / Society Value -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="number" class="form-control" id="societyValue" placeholder="Stokvel / Society Value" required>
+            <label for="societyValue">Stokvel / Society Value</label>
+        </div>
+    </div>
+</div>
+
             `;
         case 'retirementPlanning':
             return `
