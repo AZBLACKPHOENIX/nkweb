@@ -604,7 +604,7 @@ Please fill out the form and one of our friendly consultants will contact you.</
             `;
         case 'wealthManagement':
             return `
-                <div class="row g-3">
+     <div class="row g-3">
     <!-- Full Names -->
     <div class="col-md-6">
         <div class="form-floating">
@@ -652,7 +652,16 @@ Please fill out the form and one of our friendly consultants will contact you.</
             <label for="financialGoals">Financial Goals</label>
         </div>
     </div>
+
+    <!-- Investment Portfolio Upload -->
+    <div class="col-md-12">
+        <div class="form-floating">
+            <input type="file" class="form-control" id="investmentPortfolio" required>
+            <label for="investmentPortfolio">Upload Investment Portfolio</label>
+        </div>
+    </div>
 </div>
+
 
             `;
         case 'creditLending':
