@@ -489,6 +489,7 @@ Please fill out the form and upload proof of payment.</p>
             `;
         case 'stockvelSocietyGroups':
             return `
+            <p>Register your Stokvel / society group to become a private investor in Aid Finance and get returns for your investment.</p>
                 <div class="row g-3">
                     <div class="col-md-6">
                         <div class="form-floating">
