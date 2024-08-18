@@ -167,10 +167,18 @@ Please fill out the form and upload proof of payment.</p>
                         </div>
                     </div>
 
-                      <div class="col-md-6">
+                
+                     <div class="col-md-6">
                 <div class="form-floating">
-                    <input type="file" class="form-control" id="tenderDocument" placeholder="Tender Document (if available)" required>
-                    <label for="tenderDocument">CK/COR 13.4</label><br>
+                    <input type="text" class="form-control" id="fullnames" placeholder="Full Names" required>
+                    <label for="idNumber">Director Full Names</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="idNumber" placeholder="ID Number" required>
+                    <label for="idNumber">ID Number</label>
                 </div>
             </div>
 
@@ -188,6 +196,13 @@ Please fill out the form and upload proof of payment.</p>
 
 </div>
 
+      <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="file" class="form-control" id="tenderDocument" placeholder="Tender Document (if available)" required>
+                    <label for="tenderDocument">CK/COR 13.4</label><br>
+                </div>
+            </div>
+
             <div class="col-md-6">
                 <div class="form-floating">
                     <input type="file" class="form-control" id="financialStatements" placeholder="Supporting Docs" required>
@@ -195,19 +210,7 @@ Please fill out the form and upload proof of payment.</p>
                 </div>
             </div>
 
-              <div class="col-md-6">
-                <div class="form-floating">
-                    <input type="text" class="form-control" id="fullnames" placeholder="Full Names" required>
-                    <label for="idNumber">Director Full Names</label>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="form-floating">
-                    <input type="text" class="form-control" id="idNumber" placeholder="ID Number" required>
-                    <label for="idNumber">ID Number</label>
-                </div>
-            </div>
+     
 
 
             <div class="col-12">
