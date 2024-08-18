@@ -605,38 +605,55 @@ Please fill out the form and one of our friendly consultants will contact you.</
         case 'wealthManagement':
             return `
                 <div class="row g-3">
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="name" placeholder="Personal or Business Name" required>
-                            <label for="name">Personal or Business Name</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="contactInfo" placeholder="Contact Information" required>
-                            <label for="contactInfo">Contact Information</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <textarea class="form-control" id="currentFinancialStatus" placeholder="Current Financial Status" style="height: 150px;" required></textarea>
-                            <label for="currentFinancialStatus">Current Financial Status</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <textarea class="form-control" id="financialGoals" placeholder="Financial Goals" style="height: 150px;" required></textarea>
-                            <label for="financialGoals">Financial Goals</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <textarea class="form-control" id="investmentPreferences" placeholder="Investment Preferences" style="height: 150px;" required></textarea>
-                            <label for="investmentPreferences">Investment Preferences</label>
-                        </div>
-                    </div>
-                  
-                </div>
+    <!-- Full Names -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="fullNames" placeholder="Full Names" required>
+            <label for="fullNames">Full Names</label>
+        </div>
+    </div>
+
+    <!-- Surname -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="surname" placeholder="Surname" required>
+            <label for="surname">Surname</label>
+        </div>
+    </div>
+
+    <!-- Contact Number -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number" required>
+            <label for="contactNumber">Contact Number</label>
+        </div>
+    </div>
+
+    <!-- Email Address -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="email" class="form-control" id="emailAddress" placeholder="Email Address" required>
+            <label for="emailAddress">Email Address</label>
+        </div>
+    </div>
+
+    <!-- Current Financial Status -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <textarea class="form-control" id="currentFinancialStatus" placeholder="Current Financial Status" style="height: 150px;" required></textarea>
+            <label for="currentFinancialStatus">Current Financial Status</label>
+        </div>
+    </div>
+
+    <!-- Financial Goals -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <textarea class="form-control" id="financialGoals" placeholder="Financial Goals" style="height: 150px;" required></textarea>
+            <label for="financialGoals">Financial Goals</label>
+        </div>
+    </div>
+</div>
+
             `;
         case 'creditLending':
             return `
