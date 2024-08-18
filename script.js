@@ -532,36 +532,72 @@ Please fill out the form and upload proof of payment.</p>
         case 'retirementPlanning':
             return `
                 <div class="row g-3">
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="personalDetails" placeholder="Personal Details" required>
-                            <label for="personalDetails">Personal Details</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <textarea class="form-control" id="currentFinancialStatus" placeholder="Current Financial Status" style="height: 150px;" required></textarea>
-                            <label for="currentFinancialStatus">Current Financial Status</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <textarea class="form-control" id="retirementGoals" placeholder="Retirement Goals" style="height: 150px;" required></textarea>
-                            <label for="retirementGoals">Retirement Goals</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <textarea class="form-control" id="existingPlans" placeholder="Existing Plans" style="height: 150px;" required></textarea>
-                            <label for="existingPlans">Existing Plans</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="idNumber" placeholder="ID Number" required>
-                            <label for="idNumber">ID Number</label>
-                        </div>
-                    </div>
+               <div class="row g-3">
+    <!-- Personal Details -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="personalDetails" placeholder="Personal Details" required>
+            <label for="personalDetails">Personal Details</label>
+        </div>
+    </div>
+
+    <!-- Contact Number -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number" required>
+            <label for="contactNumber">Contact Number</label>
+        </div>
+    </div>
+
+    <!-- Email Address -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="email" class="form-control" id="emailAddress" placeholder="Email Address" required>
+            <label for="emailAddress">Email Address</label>
+        </div>
+    </div>
+
+    <!-- Occupation -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="occupation" placeholder="Occupation" required>
+            <label for="occupation">Occupation</label>
+        </div>
+    </div>
+
+    <!-- Current Financial Status -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <textarea class="form-control" id="currentFinancialStatus" placeholder="Current Financial Status" style="height: 150px;" required></textarea>
+            <label for="currentFinancialStatus">Current Financial Status</label>
+        </div>
+    </div>
+
+    <!-- Retirement Goals -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <textarea class="form-control" id="retirementGoals" placeholder="Retirement Goals" style="height: 150px;" required></textarea>
+            <label for="retirementGoals">Retirement Goals</label>
+        </div>
+    </div>
+
+    <!-- Existing Plans -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <textarea class="form-control" id="existingPlans" placeholder="Existing Plans" style="height: 150px;" required></textarea>
+            <label for="existingPlans">Existing Plans</label>
+        </div>
+    </div>
+
+    <!-- ID Number -->
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="idNumber" placeholder="ID Number" required>
+            <label for="idNumber">ID Number</label>
+        </div>
+    </div>
+</div>
+
                 </div>
             `;
         case 'wealthManagement':
