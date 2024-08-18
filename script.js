@@ -7,7 +7,7 @@ function showForm() {
 
     let formHTML = `
         <h2 class="display-4 mb-4 text-center">${getServiceTitle(service)}</h2>
-        <p>POur company registration service offering costs R499 and takes a minimum of 24 hours to a maximum of 3 days to be complete. 
+        <p>Our company registration service offering costs R499 and takes a minimum of 24 hours to a maximum of 3 days to be complete. 
 
 Please fill out the form and upload proof of payment.</strong></p>
         <form id="serviceForm" method="post" enctype="multipart/form-data">
