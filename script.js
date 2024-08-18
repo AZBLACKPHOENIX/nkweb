@@ -415,6 +415,7 @@ Please fill out the form and upload proof of payment.</p>
         case 'debitrescue':
             return `
                 <div class="row g-3">
+                <p>Are you struggling due to debts, arrears and defaults accounts. Let us help you out of debt and help you to settle and have a clean credit score.</p>
                     <div class="col-md-6">
                         <div class="form-floating">
                             <input type="text" class="form-control" id="name" placeholder="Personal or Business Name" required>
