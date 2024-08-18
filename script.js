@@ -7,9 +7,7 @@ function showForm() {
 
     let formHTML = `
         <h2 class="display-4 mb-4 text-center">${getServiceTitle(service)}</h2>
-        <p>Our company registration service offering costs R499 and takes a minimum of 24 hours to a maximum of 3 days to be complete. 
-
-Please fill out the form and upload proof of payment.</strong></p>
+ 
         <form id="serviceForm" method="post" enctype="multipart/form-data">
             ${getFormFields(service)}
             <h3>Proof of Payment</h3>
@@ -48,6 +46,9 @@ function getFormFields(service) {
         case 'companyRegistration':
             return `
                 <div class="row g-3">
+                       <p>Our company registration service offering costs R499 and takes a minimum of 24 hours to a maximum of 3 days to be complete. 
+
+Please fill out the form and upload proof of payment.</strong></p>
                     <!-- Preferred Business Name 1 -->
                     <div class="col-md-6">
                         <div class="form-floating">
@@ -133,30 +134,50 @@ function getFormFields(service) {
     return `
     <div class="container text-center my-4">
     <h5 class=" fw-bold text-primary">CK, COR 13.4, Company Registration Certificate</h5>
+    <p>Our tender service offering allows you to select the certificate you want to apply for at the bottom. All certificates are done within 24 hours the earliest  to 3 days the latest to complete.
+Please fill out the form and upload proof of payment.</p>
 </div>
         <div class="row g-3">
             <div class="col-md-6">
                 <div class="form-floating">
-                    <input type="text" class="form-control" id="businessName" placeholder="Preferred Business Name" required>
-                    <label for="businessName">Business Name</label>
+                    <input type="text" class="form-control" id="businessName" placeholder="Company Name" required>
+                    <label for="companyName">Company Name</label>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-floating">
-                    <input type="text" class="form-control" id="contactInfo" placeholder="Contact Information" required>
-                    <label for="contactInfo">Contact Information</label>
+                    <input type="text" class="form-control" id="regno" placeholder="Contact Information" required>
+                    <label for="regno">Company Registration Number</label>
                 </div>
             </div>
-            <div class="col-md-6">
+          
+
+              <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="cellNumber" placeholder="Cell Number" required>
+                            <label for="cellNumber">Cell Number</label>
+                        </div>
+                    </div>
+
+                      <!-- Email Address -->
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="emailAddress" placeholder="Email Address" required>
+                            <label for="emailAddress">Email Address</label>
+                        </div>
+                    </div>
+
+                      <div class="col-md-6">
                 <div class="form-floating">
                     <input type="file" class="form-control" id="tenderDocument" placeholder="Tender Document (if available)" required>
                     <label for="tenderDocument">Tender Document</label>
                 </div>
             </div>
+
             <div class="col-md-6">
                 <div class="form-floating">
-                    <textarea class="form-control" id="relevantExperience" placeholder="Relevant Experience" style="height: 150px;" required></textarea>
-                    <label for="relevantExperience">Relevant Experience</label>
+                    <textarea class="form-control" id="sinstruct" placeholder="special instruction" style="height: 150px;" required></textarea>
+                    <label for="relevantExperience">Special Instructions</label>
                 </div>
             </div>
             <div class="col-md-6">
