@@ -133,7 +133,7 @@ Please fill out the form and upload proof of payment.</strong></p>
         case 'tenderServices':
     return `
     <div class="container text-center my-4">
-    <h5 class=" fw-bold text-primary">CK, COR 13.4, Company Registration Certificate</h5>
+  
     <p>Our tender service offering allows you to select the certificate you want to apply for at the bottom. All certificates are done within 24 hours the earliest  to 3 days the latest to complete.
 Please fill out the form and upload proof of payment.</p>
 </div>
@@ -283,6 +283,20 @@ Please fill out the form and upload proof of payment.</p>
                     </div>
                 
                 
+      <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="file" class="form-control" id="tenderDocument" placeholder="Tender Document (if available)" required>
+                    <label for="tenderDocument">Business  Profile</label><br>
+                </div>
+            </div>    
+                
+
+                    <div class="col-md-6">
+                <div class="form-floating">
+                    <textarea class="form-control" id="sinstruct" placeholder="special instruction" style="height: 150px;" required></textarea>
+                    <label for="relevantExperience">Special Instructions</label>
+                </div>
+            </div>z
                 </div>
             `;
         case 'dramaWriting':
