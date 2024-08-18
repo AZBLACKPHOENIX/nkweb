@@ -10,15 +10,25 @@ function showForm() {
  
         <form id="serviceForm" method="post" enctype="multipart/form-data">
             ${getFormFields(service)}
+    `;
+
+    if (service === 'retirementPlanning') {
+        formHTML += '';
+    } else {
+        formHTML += `
             <h3>Proof of Payment</h3>
             <div class="form-floating mb-3">
                 <input type="file" class="form-control" name="proofOfPayment" required>
                 <label for="proofOfPayment">Upload Proof of Payment</label>
             </div>
-            <button class="btn btn-primary w-100 py-3" type="submit">Submit Request</button>
+        `;
+    }
+
+    formHTML += `
+        <button class="btn btn-primary w-100 py-3" type="submit">Submit Request</button>
         </form>
     `;
-    
+
     formContainer.innerHTML = formHTML;
 }
 
@@ -550,7 +560,9 @@ Please fill out the form and upload proof of payment.</p>
         case 'retirementPlanning':
             return `
                 <div class="row g-3">
-          
+          <p>Don't simply retire from something; have something to retire to. Let us help you plan your retirement.
+
+Fill the form below and one of our friendly consultants will call you.</p>
     <!-- Personal Details -->
     <div class="col-md-6">
         <div class="form-floating">
