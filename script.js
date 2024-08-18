@@ -532,9 +532,7 @@ Please fill out the form and upload proof of payment.</p>
         case 'retirementPlanning':
             return `
                 <div class="row g-3">
-               <p>Have you worked hard and smart and earned yourself massive wealth or you have received an inheritance and are looking for wisdom of wealth management.
-
-Please fill out the form and one of our friendly consultants will contact you.</p>
+          
     <!-- Personal Details -->
     <div class="col-md-6">
         <div class="form-floating">
@@ -605,6 +603,9 @@ Please fill out the form and one of our friendly consultants will contact you.</
         case 'wealthManagement':
             return `
      <div class="row g-3">
+          <p>Have you worked hard and smart and earned yourself massive wealth or you have received an inheritance and are looking for wisdom of wealth management.
+
+Please fill out the form and one of our friendly consultants will contact you.</p>
     <!-- Full Names -->
     <div class="col-md-6">
         <div class="form-floating">
