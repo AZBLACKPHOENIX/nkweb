@@ -335,8 +335,8 @@ Please fill out the form and upload proof of payment.</p>
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="idNumber" placeholder="ID Number" required>
-                            <label for="idNumber">ID Number</label>
+                            <input type="text" class="form-control" id="email" placeholder="email" required>
+                            <label for="idNumber">Email</label>
                         </div>
                     </div>
                 </div>
