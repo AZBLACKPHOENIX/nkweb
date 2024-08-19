@@ -313,6 +313,7 @@ Please fill out the form and upload proof of payment.</p>
         case 'dramaWriting':
             return `
                 <div class="row g-3">
+                <p>Are you passionate and in the business of story telling? Let us write for you a perfect drama or movie and Tv Ads. Express your interests  by paying a minimum deposit fee of R1000 non refundable and we will contact you and sell you a perfect story for your audience.</p>
                     <div class="col-md-6">
                         <div class="form-floating">
                             <input type="text" class="form-control" id="projectName" placeholder="Project Name" required>
@@ -354,6 +355,7 @@ Please fill out the form and upload proof of payment.</p>
         case 'songwriting':
             return `
                 <div class="row g-3">
+                        <p>Are you a musician or a producer and are looking for a best song writer for your music project? Or you are working on a movie, drama or corporate advert and you needs lyrical aligned song to your project, well express your interest by filling the form below and pay a non refundable deposit fee of R500 and one of our friendly will contact you to start your project.</p>
                     <div class="col-md-6">
                         <div class="form-floating">
                             <input type="text" class="form-control" id="projectName" placeholder="Project Name" required>
@@ -395,6 +397,7 @@ Please fill out the form and upload proof of payment.</p>
         case 'payroll':
             return `
                 <div class="row g-3">
+                <p>Are you struggling with your company payroll and having difficulty in being fully professional in your company payroll system? Well let us run your company payroll for you at an affordable rate. Express your interest by paying a fee of at least R300 once off and one of our friendly consultant will contact you and start your company onboarding.</p>
                     <div class="col-md-6">
                         <div class="form-floating">
                             <input type="text" class="form-control" id="businessName" placeholder="Business Name" required>
